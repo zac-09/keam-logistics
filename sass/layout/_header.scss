@@ -1,0 +1,84 @@
+.header {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($color-primary, 0.8),
+      rgba($color-primary-light, 0.7)
+    ),
+    url(../img/shaah-shahidh--subrrYxv8A-unsplash.jpg);
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-grey-light-2; 
+  color: $color-grey-light-1;
+  //   justify-content: space-between  ;
+  &__content {
+    margin-left: 15rem;
+  }
+  &__btn-container {
+    color: #fff;
+    margin-top: 2.5rem;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  animation: moveInDown 0.3s ease-out backwards 0.4s;
+  &__list {
+    display: flex;
+    list-style: none;
+    margin-top: 3rem;
+  }
+  &__item {
+    text-decoration: none;
+    list-style: none;
+
+    margin-right: 1.5rem;
+
+    list-style: none;
+  }
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.6rem;
+      display: inline-block;
+      color: $color-grey-light-1;
+      transition: all 0.2s;
+      position: relative;
+    }
+    &--active::after {
+      content: "";
+
+      height: 1px;
+      width: 2.8rem;
+      position: absolute;
+      background-color: $color-grey-dark-2; 
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      transition: all 0.2s;
+    }
+    &::after {
+      //   content: "";
+
+      //   height: 1px;
+      //   width: 2.8rem;
+      //   position: absolute;
+      //   background-color: $color-grey-dark-3;
+      //   top: 100%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+      //   display: block;
+      //   transition: all 0.2s;
+    }
+    &:hover {
+      transform: scale(1.2) translateY(-4px);
+    }
+    &:active::after {
+      //   display: block;
+    }
+  }
+}

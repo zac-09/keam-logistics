@@ -10,22 +10,24 @@
     font-weight: 300;
     width: 15rem;
     padding: 1rem;
-    transition: all .2s;
+    transition: all 0.2s;
   }
   &--white {
     background-color: $color-grey-light-2;
     color: $color-grey-dark-2;
-    margin-left: 2rem;
+    margin-left: 2rem; 
+    animation: moveInUp 0.4s ease-in backwards 0.8s;
   }
-  &--blue {
+  &--blue { 
     background-color: $color-primary;
     color: $color-grey-light-1;
+    animation: moveInUp 0.4s ease-in backwards 0.4s;
+
     // background-color: green;
   }
 
-  &:active{
-      box-shadow: $shadow-dark;
-      transform: translateY(3px) scale(.9);
-      
+  &:active {
+    box-shadow: $shadow-dark;
+    transform: translateY(3px) scale(0.9);
   }
 }

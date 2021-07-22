@@ -13,6 +13,12 @@ body {
   font-family: "maitree";
   font-weight: 300; }
 
+.card {
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  width: 30rem;
+  margin: 2rem; }
+
 .heading__primary {
   font-size: 5rem;
   font-weight: 300;
@@ -20,12 +26,28 @@ body {
   flex-direction: column;
   font-family: "nobile";
   color: #faf9f9;
-  margin-top: 20rem; }
+  margin-top: 20rem;
+  animation: moveInRight 0.5s ease-in; }
 
 .heading__sub {
   display: block;
   color: #faf9f9;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  animation: moveInRight .5s ease-out backwards .5s; }
+
+.heading-2 {
+  font-size: 3rem;
+  font-family: "nobile";
+  margin-top: 3rem;
+  color: transparent;
+  background-image: linear-gradient(to right, #25bcf3, #a2e7ec);
+  background-clip: text;
+  display: block;
+  -webkit-background-clip: text;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .header {
   background-image: linear-gradient(to bottom right, rgba(37, 188, 243, 0.8), rgba(162, 231, 236, 0.7)), url(../img/shaah-shahidh--subrrYxv8A-unsplash.jpg);
@@ -33,12 +55,47 @@ body {
   height: 90vh;
   display: flex;
   flex-direction: column;
+  background-color: #f4f2f2;
   color: #faf9f9; }
   .header__content {
     margin-left: 15rem; }
   .header__btn-container {
     color: #fff;
     margin-top: 2.5rem; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  animation: moveInDown 0.3s ease-out backwards 0.4s; }
+  .nav__list {
+    display: flex;
+    list-style: none;
+    margin-top: 3rem; }
+  .nav__item {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 1.5rem;
+    list-style: none; }
+  .nav__link, .nav__link:link, .nav__link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: inline-block;
+    color: #faf9f9;
+    transition: all 0.2s;
+    position: relative; }
+  .nav__link--active::after {
+    content: "";
+    height: 1px;
+    width: 2.8rem;
+    position: absolute;
+    background-color: #777;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    transition: all 0.2s; }
+  .nav__link:hover {
+    transform: scale(1.2) translateY(-4px); }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -48,17 +105,80 @@ body {
   font-weight: 300;
   width: 15rem;
   padding: 1rem;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .btn--white {
   background-color: #f4f2f2;
   color: #777;
-  margin-left: 2rem; }
+  margin-left: 2rem;
+  animation: moveInUp 0.4s ease-in backwards 0.8s; }
 
 .btn--blue {
   background-color: #25bcf3;
-  color: #faf9f9; }
+  color: #faf9f9;
+  animation: moveInUp 0.4s ease-in backwards 0.4s; }
 
 .btn:active {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   transform: translateY(3px) scale(0.9); }
+
+.services {
+  background-color: #f4f2f2;
+  margin-top: -1rem;
+  position: relative;
+  display: flex;
+  font-size: 1.8rem; }
+  .services__img {
+    height: 18rem;
+    width: 100%; }
+  .services__name {
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #25bcf3;
+    width: 100%;
+    text-overflow: ellipsis; }
+  .services__description {
+    padding: 1.2rem;
+    font-size: 1.6rem; }
+  .services__card {
+    transition: all 0.3s; }
+    .services__card:hover {
+      transform: translateY(-2rem); }
+
+.services__card-container {
+  margin: 9rem auto;
+  display: flex;
+  flex-wrap: wrap; }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
