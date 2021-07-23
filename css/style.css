@@ -19,6 +19,34 @@ body {
   width: 30rem;
   margin: 2rem; }
 
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex; }
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */ }
+
+.dots__dot:last-child {
+  margin: 0; }
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: #888;
+  opacity: 1; }
+
 .heading__primary {
   font-size: 5rem;
   font-weight: 300;
@@ -33,12 +61,12 @@ body {
   display: block;
   color: #faf9f9;
   font-size: 1.8rem;
-  animation: moveInRight .5s ease-out backwards .5s; }
+  animation: moveInRight 0.5s ease-out backwards 0.5s; }
 
 .heading-2 {
   font-size: 3rem;
   font-family: "nobile";
-  margin-top: 3rem;
+  margin-top: 5rem;
   color: transparent;
   background-image: linear-gradient(to right, #25bcf3, #a2e7ec);
   background-clip: text;
@@ -47,7 +75,8 @@ body {
   position: absolute;
   top: 3%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  margin-bottom: 10rem; }
 
 .header {
   background-image: linear-gradient(to bottom right, rgba(37, 188, 243, 0.8), rgba(162, 231, 236, 0.7)), url(../img/shaah-shahidh--subrrYxv8A-unsplash.jpg);
@@ -124,22 +153,58 @@ body {
 
 .services {
   background-color: #f4f2f2;
-  margin-top: -1rem;
+  margin: -1rem auto;
   position: relative;
   display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 1.8rem; }
+  .services__heading {
+    margin-bottom: 5rem; }
+  .services__container {
+    display: flex;
+    margin: 0 5rem; }
+  .services__icon {
+    height: 4rem;
+    width: 4rem;
+    fill: #25bcf3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .services__icon-container {
+    position: relative;
+    background-color: #a2e7ec;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem; }
   .services__img {
-    height: 18rem;
     width: 100%; }
+  .services__img-container {
+    width: 50%; }
+  .services__all {
+    margin: 8rem auto;
+    width: 88%; }
+  .services__content {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    width: 50%;
+    position: relative;
+    align-items: center;
+    margin-top: 5rem; }
   .services__name {
-    padding: 1.2rem;
-    font-size: 1.8rem;
+    padding: 1.3rem;
+    font-size: 2.2rem;
     font-weight: 500;
     color: #25bcf3;
-    width: 100%;
-    text-overflow: ellipsis; }
+    margin-top: 2rem;
+    display: inline-block;
+    overflow-wrap: break-word; }
   .services__description {
-    padding: 1.2rem;
+    padding: 0.8rem;
+    display: inline-block;
     font-size: 1.6rem; }
   .services__card {
     transition: all 0.3s; }

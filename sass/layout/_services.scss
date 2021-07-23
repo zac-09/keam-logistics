@@ -1,28 +1,74 @@
 .services {
   background-color: $color-grey-light-2;
-  margin-top: -1rem;
+  margin: -1rem auto;
   position: relative;
   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 1.8rem;
+  &__heading {
+    margin-bottom: 5rem;
+  }
+  &__container {
+    display: flex;
+    margin: 0 5rem;
+  }
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    fill: $color-primary;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__icon-container {
+    position: relative;
+    // margin-bottom: 5rem;
+    background-color: $color-primary-light;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+  }
   &__img {
-    height: 18rem;
+    // height: 30rem;
     width: 100%;
   }
-
+  &__img-container {
+    width: 50%;
+  }
+  &__all {
+    margin: 8rem auto;
+    width: 88%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    // max-width: 50rem;
+    width: 50%;
+    position: relative;
+    align-items: center;
+    margin-top: 5rem;
+  }
   &__name {
-    padding: 1.2rem;
-    font-size: 1.8rem; 
+    padding: 1.3rem;
+    font-size: 2.2rem;
     font-weight: 500;
     color: $color-primary;
-    width: 100%;
-    text-overflow: ellipsis;
+    // width: 100%;
+    margin-top: 2rem;
+    display: inline-block;
+    // text-overflow: ellipsis;
+    overflow-wrap: break-word;
   }
   &__description {
-    padding: 1.2rem;
-  font-size: 1.6rem;
-
+    padding: 0.8rem;
+    display: inline-block;
+    // margin-left: 1.5rem;
+    font-size: 1.6rem;
   }
   &__card {
     transition: all 0.3s;
