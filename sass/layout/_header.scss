@@ -18,27 +18,27 @@
   &__btn-container {
     color: #fff;
     margin-top: 2.5rem;
-  }
-}
+  }    
+}                    
 .nav {
   display: flex;
   justify-content: space-between;
   animation: moveInDown 0.3s ease-out backwards 0.4s;
   &__list {
-    display: flex;
+    display: flex;    
     list-style: none;
     margin-top: 3rem;
   }
   &__item {
     text-decoration: none;
-    list-style: none;
+    list-style: none;   
 
     margin-right: 1.5rem;
 
     list-style: none;
   }
-  &__link {
-    &,
+  &__link {             
+    &,                    
     &:link,
     &:visited {
       text-decoration: none;

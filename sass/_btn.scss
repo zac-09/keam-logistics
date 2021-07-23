@@ -15,10 +15,10 @@
   &--white {
     background-color: $color-grey-light-2;
     color: $color-grey-dark-2;
-    margin-left: 2rem; 
+    margin-left: 2rem;
     animation: moveInUp 0.4s ease-in backwards 0.8s;
   }
-  &--blue { 
+  &--blue {
     background-color: $color-primary;
     color: $color-grey-light-1;
     animation: moveInUp 0.4s ease-in backwards 0.4s;
@@ -29,5 +29,30 @@
   &:active {
     box-shadow: $shadow-dark;
     transform: translateY(3px) scale(0.9);
+  }
+}
+.btn__tab {
+  border: none;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin: 2rem;
+  width: 20rem;
+  color: $color-grey-light-1;
+  border-radius: 20rem;
+  cursor: pointer;
+  transition: all .3s;
+  &--1 {
+    background-color: $color-primary;  
+    
+  }
+  &--2 {
+    background-color: #5ec576;
+  }
+  &--3 {
+    background-color: #ff585f;
+  }
+  &:hover {
+    background-color: darken;
+    transform: translateY(-4px);
   }
 }

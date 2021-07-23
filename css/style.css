@@ -73,9 +73,6 @@ body {
   display: block;
   -webkit-background-clip: text;
   position: absolute;
-  top: 3%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   margin-bottom: 10rem; }
 
 .header {
@@ -151,17 +148,41 @@ body {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   transform: translateY(3px) scale(0.9); }
 
+.btn__tab {
+  border: none;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin: 2rem;
+  width: 20rem;
+  color: #faf9f9;
+  border-radius: 20rem;
+  cursor: pointer;
+  transition: all .3s; }
+  .btn__tab--1 {
+    background-color: #25bcf3; }
+  .btn__tab--2 {
+    background-color: #5ec576; }
+  .btn__tab--3 {
+    background-color: #ff585f; }
+  .btn__tab:hover {
+    background-color: darken;
+    transform: translateY(-4px); }
+
 .services {
   background-color: #f4f2f2;
   margin: -1rem auto;
   position: relative;
   display: flex;
-  width: 100%;
   flex-direction: column;
   justify-content: space-between;
   font-size: 1.8rem; }
   .services__heading {
-    margin-bottom: 5rem; }
+    margin-bottom: 10rem;
+    position: absolute;
+    top: 1%;
+    left: 90%;
+    transform: translate(-50%, 0%);
+    width: 100%; }
   .services__container {
     display: flex;
     margin: 0 5rem; }
@@ -184,7 +205,7 @@ body {
   .services__img-container {
     width: 50%; }
   .services__all {
-    margin: 8rem auto;
+    margin: 12rem auto;
     width: 88%; }
   .services__content {
     display: flex;
@@ -247,3 +268,74 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0); } }
+
+.about {
+  height: 85vh;
+  position: relative;
+  background-image: linear-gradient(to top right, rgba(51, 51, 51, 0.9), rgba(153, 153, 153, 0.9)), url(../img/marcin-jozwiak-kGoPcmpPT7c-unsplash.jpg);
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 86%, 0 73%, 0 0);
+  padding: 2rem; }
+  .about__heading {
+    margin-bottom: 10rem;
+    position: absolute;
+    top: 1%;
+    left: 90%;
+    transform: translate(-50%, 0%);
+    width: 100%; }
+  .about__text {
+    display: inline-block;
+    margin-top: 10rem;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: #faf9f9; }
+
+.objectives {
+  position: relative;
+  height: 80vh;
+  padding: 2rem;
+  margin-top: -4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .objectives__text {
+    margin: 1rem 5rem; }
+  .objectives__description {
+    font-size: 2rem; }
+  .objectives__title {
+    display: inline-block;
+    font-size: 3.5rem; }
+  .objectives__icon {
+    height: 5rem;
+    width: 5rem;
+    fill: #25bcf3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .objectives__icon-container {
+    position: relative;
+    background-color: #a2e7ec;
+    border-radius: 50%;
+    width: 15rem;
+    margin-top: 2.5rem;
+    height: 7.8rem; }
+  .objectives__content {
+    margin: 5rem;
+    display: flex; }
+  .objectives__heading {
+    margin-bottom: 10rem;
+    position: absolute;
+    top: 1%;
+    left: 90%;
+    transform: translate(-50%, 0%);
+    width: 100%; }
+  .objectives__tabs {
+    margin-top: 12rem;
+    flex: wrap;
+    width: 80%;
+    position: relative; }
+  .objectives__tabs-container {
+    position: absolute;
+    top: -15%;
+    left: 15%; }
