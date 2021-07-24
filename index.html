@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;400;500;700&display=swap"
       rel="stylesheet"
@@ -58,7 +58,7 @@
         </div>
       </div>
     </header>
-    <section class="services">
+     <section class="services  section">
       <div class="services__heading">
         <h2 class="heading-2">What We Do</h2>
       </div>
@@ -169,8 +169,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="about">
+    </section> 
+   <section class="about  section">
       <div class="about__heading">
         <h2 class="heading-2">About us</h2>
       </div>
@@ -186,21 +186,29 @@
         and transport company providing efficient and cost effective services to
         clients through quality processes.
       </p>
-    </section>
-    <section class="objectives">
+    </section> 
+     <section class="objectives  section">
       <div class="objectives__heading">
         <h2 class="heading-2">Why We Are The Best</h2>
       </div>
       <div class="objectives__tabs card">
         <div class="objectives__tabs-container">
-          <button class="btn__tab btn__tab--1">Mission</button>
-          <button class="btn__tab btn__tab--2">Vision</button>
-          <button class="btn__tab btn__tab--3">Values</button>
+          <button data-tab="1" class="btn__tab btn__tab--1 btn__tab--active">
+            Mission
+          </button>
+          <button data-tab="2" class="btn__tab btn__tab--2">Vision</button>
+          <button data-tab="3" class="btn__tab btn__tab--3">Values</button>
         </div>
-        <div class="objectives__content">
+        <div
+          class="
+            objectives__content
+            objectives__content--1
+            objectives__content--active
+          "
+        >
           <div class="objectives__icon-container">
-            <svg class="objectives__icon">
-              <use xlink:href="img/sprite.svg#icon-settings_input_svideo"></use>
+            <svg class="objectives__icon objectives__icon--1">
+              <use xlink:href="img/sprite.svg#icon-rocket"></use>
             </svg>
           </div>
           <div class="objectives__text">
@@ -213,7 +221,35 @@
             </p>
           </div>
         </div>
+        <div class="objectives__content objectives__content--2">
+          <div class="objectives__icon-container">
+            <svg class="objectives__icon objectives__icon--2">
+              <use xlink:href="img/sprite.svg#icon-lightbulb"></use>
+            </svg>
+          </div>
+          <div class="objectives__text">
+            <span class="objectives__title">Our Vision</span>
+            <p class="objectives__description">
+              To be a key partner in integrated logistics in Uganda, offering
+              professional support in logistics.
+            </p>
+          </div>
+        </div>
+        <div class="objectives__content objectives__content--3">
+          <div class="objectives__icon-container">
+            <svg class="objectives__icon objectives__icon--3">
+              <use xlink:href="img/sprite.svg#icon-handshake-o"></use>
+            </svg>
+          </div>
+          <div class="objectives__text">
+            <span class="objectives__title">Our Core Values</span>
+            <p class="objectives__description">
+              Efficiency, Reliability, Responsiveness, Continuous Improvement
+              and Customer service.
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
+    </section> 
   </body>
 </html>

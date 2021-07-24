@@ -1,16 +1,17 @@
 .about {
   //   width: 100%;
+  overflow: hidden;
   height: 85vh;
   position: relative;
   background-image: linear-gradient(
       to top right,
-      rgba($color-grey-dark-1, .9),    
-      rgba($color-grey-dark-3, .9)
+      rgba($color-grey-dark-1, 0.9),
+      rgba($color-grey-dark-3, 0.9)
     ),
-    url(../img/marcin-jozwiak-kGoPcmpPT7c-unsplash.jpg);
+    url(../img/frank-mckenna-tjX_sniNzgQ-unsplash.jpg);
   background-size: cover;
   clip-path: polygon(100% 0, 100% 86%, 0 73%, 0 0);
-  padding: 2rem;
+  // padding: 2rem;
   &__heading {
     margin-bottom: 10rem;
     position: absolute;

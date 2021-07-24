@@ -40,10 +40,12 @@
   color: $color-grey-light-1;
   border-radius: 20rem;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
+  &--active {
+    transform: translateY(-4px);      
+  }
   &--1 {
-    background-color: $color-primary;  
-    
+    background-color: $color-primary;
   }
   &--2 {
     background-color: #5ec576;
@@ -51,8 +53,8 @@
   &--3 {
     background-color: #ff585f;
   }
-  &:hover {
-    background-color: darken;
-    transform: translateY(-4px);
-  }
+  // &:hover {
+  //   background-color: darken;
+  //   transform: translateY(-4px);
+  // }
 }

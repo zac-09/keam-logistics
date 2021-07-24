@@ -13,6 +13,13 @@ body {
   font-family: "maitree";
   font-weight: 300; }
 
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem); }
+
+.section {
+  transition: transform 1s, opacity 1s; }
+
 .card {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   background-color: #fff;
@@ -68,7 +75,7 @@ body {
   font-family: "nobile";
   margin-top: 5rem;
   color: transparent;
-  background-image: linear-gradient(to right, #25bcf3, #a2e7ec);
+  background-image: linear-gradient(to right, #25bcf3, #25bcf3);
   background-clip: text;
   display: block;
   -webkit-background-clip: text;
@@ -92,7 +99,8 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  animation: moveInDown 0.3s ease-out backwards 0.4s; }
+  animation: moveInDown 0.3s ease-out backwards 0.4s;
+  width: 100%; }
   .nav__list {
     display: flex;
     list-style: none;
@@ -122,6 +130,10 @@ body {
     transition: all 0.2s; }
   .nav__link:hover {
     transform: scale(1.2) translateY(-4px); }
+
+sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95); }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -157,20 +169,18 @@ body {
   color: #faf9f9;
   border-radius: 20rem;
   cursor: pointer;
-  transition: all .3s; }
+  transition: all 0.3s; }
+  .btn__tab--active {
+    transform: translateY(-4px); }
   .btn__tab--1 {
     background-color: #25bcf3; }
   .btn__tab--2 {
     background-color: #5ec576; }
   .btn__tab--3 {
     background-color: #ff585f; }
-  .btn__tab:hover {
-    background-color: darken;
-    transform: translateY(-4px); }
 
 .services {
   background-color: #f4f2f2;
-  margin: -1rem auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -180,9 +190,9 @@ body {
     margin-bottom: 10rem;
     position: absolute;
     top: 1%;
-    left: 90%;
+    left: 50%;
     transform: translate(-50%, 0%);
-    width: 100%; }
+    width: 30rem; }
   .services__container {
     display: flex;
     margin: 0 5rem; }
@@ -226,6 +236,7 @@ body {
   .services__description {
     padding: 0.8rem;
     display: inline-block;
+    color: #777;
     font-size: 1.6rem; }
   .services__card {
     transition: all 0.3s; }
@@ -270,12 +281,12 @@ body {
     transform: translateY(0); } }
 
 .about {
+  overflow: hidden;
   height: 85vh;
   position: relative;
-  background-image: linear-gradient(to top right, rgba(51, 51, 51, 0.9), rgba(153, 153, 153, 0.9)), url(../img/marcin-jozwiak-kGoPcmpPT7c-unsplash.jpg);
+  background-image: linear-gradient(to top right, rgba(51, 51, 51, 0.9), rgba(153, 153, 153, 0.9)), url(../img/frank-mckenna-tjX_sniNzgQ-unsplash.jpg);
   background-size: cover;
-  clip-path: polygon(100% 0, 100% 86%, 0 73%, 0 0);
-  padding: 2rem; }
+  clip-path: polygon(100% 0, 100% 86%, 0 73%, 0 0); }
   .about__heading {
     margin-bottom: 10rem;
     position: absolute;
@@ -293,43 +304,49 @@ body {
 .objectives {
   position: relative;
   height: 80vh;
-  padding: 2rem;
   margin-top: -4rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .objectives__text {
-    margin: 1rem 5rem; }
+    margin: 1rem 5rem;
+    color: #777; }
   .objectives__description {
     font-size: 2rem; }
   .objectives__title {
     display: inline-block;
+    color: #333;
     font-size: 3.5rem; }
   .objectives__icon {
     height: 5rem;
     width: 5rem;
-    fill: #25bcf3;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    .objectives__icon--1 {
+      fill: #25bcf3; }
+    .objectives__icon--2 {
+      fill: #5ec576; }
+    .objectives__icon--3 {
+      fill: #ff585f; }
   .objectives__icon-container {
     position: relative;
-    background-color: #a2e7ec;
-    border-radius: 50%;
-    width: 15rem;
     margin-top: 2.5rem;
-    height: 7.8rem; }
+    margin: 3rem; }
   .objectives__content {
     margin: 5rem;
-    display: flex; }
+    display: none; }
+    .objectives__content--active {
+      display: flex; }
   .objectives__heading {
     margin-bottom: 10rem;
     position: absolute;
     top: 1%;
-    left: 90%;
+    left: 50%;
     transform: translate(-50%, 0%);
-    width: 100%; }
+    width: 70rem; }
   .objectives__tabs {
     margin-top: 12rem;
     flex: wrap;

@@ -1,13 +1,15 @@
 .objectives {
   position: relative;
   height: 80vh;
-  padding: 2rem;
+//   padding: 2rem;
   margin-top: -4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   &__text {
     margin: 1rem 5rem;
+    color: $color-grey-dark-2;
   }
   &__description {
     // display: inline-block;
@@ -15,39 +17,56 @@
   }
   &__title {
     display: inline-block;
+    color: $color-grey-dark-1;
+
     // margin: 2rem;
+
     font-size: 3.5rem;
   }
   &__icon {
     height: 5rem;
     width: 5rem;
-    fill: $color-primary;
+    // fill: $color-primary;
     position: absolute;
 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    &--1 {
+      fill: $color-primary;
+    }
+    &--2 {
+      fill: #5ec576;
+    }
+    &--3 {
+      fill: #ff585f;
+    }
   }
   &__icon-container {
     position: relative;
-    // margin-bottom: 5rem;
-    background-color: $color-primary-light;
-    border-radius: 50%;
-    width: 15rem;
+    // // margin-bottom: 5rem;
+
+    // border-radius: 50%;
+    // width: 15rem;
     margin-top: 2.5rem;
-    height: 7.8rem;
+    margin: 3rem;
+    // height: 7.2rem;
+    // flex-basis: 30%;
   }
   &__content {
     margin: 5rem;
-    display: flex;
+    display: none;
+    &--active {
+      display: flex;
+    }
   }
   &__heading {
     margin-bottom: 10rem;
     position: absolute;
     top: 1%;
-    left: 90%;
-    transform: translate(-50%, 0%);
-    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);   
+    width: 70rem; 
   }
   &__tabs {
     margin-top: 12rem;
