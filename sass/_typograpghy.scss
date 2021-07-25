@@ -2,7 +2,7 @@
   font-size: 5rem;
   font-weight: 300;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   font-family: $font-title;
   color: $color-grey-light-1;
   //   padding: 0 15rem;
@@ -18,19 +18,18 @@
 
 .heading-2 {
   font-size: 3rem;
-  font-family: $font-title;
+  font-family: $font-title;                    
   // padding: 2rem;
   margin-top: 5rem;
   color: transparent;
-  background-image: linear-gradient(
-    to right,
-    $color-primary,
-    $color-primary
-  );
+  background-image: linear-gradient(to right, $color-primary, $color-primary);
   background-clip: text;
   display: block;
   -webkit-background-clip: text;
   position: absolute;
 
   margin-bottom: 10rem;
+  &--team {
+    background-image: linear-gradient(to right, #757575, #757575);
+  }
 }

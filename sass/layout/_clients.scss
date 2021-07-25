@@ -1,0 +1,37 @@
+.clients {
+  position: relative;
+  padding-top: 1.8rem;
+
+  &__heading {
+    margin-bottom: 10rem;           
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 30rem;
+  }
+  &__description {
+    display: inline-block;
+    font-size: 1.7rem;
+    // color: $color-grey-light-1;    
+  }
+  &__description-container {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 165%);
+
+    width: 82%;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 17rem;
+    grid-row-gap: 3rem;
+    padding: 4rem;                   
+  }
+  &__logo {
+    height: 5rem;
+    color: $color-grey-dark-1;
+  }
+}

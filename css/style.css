@@ -81,6 +81,8 @@ body {
   -webkit-background-clip: text;
   position: absolute;
   margin-bottom: 10rem; }
+  .heading-2--team {
+    background-image: linear-gradient(to right, #757575, #757575); }
 
 .header {
   background-image: linear-gradient(to bottom right, rgba(37, 188, 243, 0.8), rgba(162, 231, 236, 0.7)), url(../img/shaah-shahidh--subrrYxv8A-unsplash.jpg);
@@ -341,7 +343,7 @@ sticky {
     .objectives__content--active {
       display: flex; }
   .objectives__heading {
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
     position: absolute;
     top: 1%;
     left: 50%;
@@ -351,8 +353,218 @@ sticky {
     margin-top: 12rem;
     flex: wrap;
     width: 80%;
-    position: relative; }
+    position: relative;
+    height: 40rem; }
   .objectives__tabs-container {
     position: absolute;
-    top: -15%;
+    top: -10%;
     left: 15%; }
+
+.team {
+  background-image: linear-gradient(to bottom right, #25bcf3, #a2e7ec);
+  padding-top: 1.8rem;
+  position: relative; }
+  .team__card {
+    border-radius: 30px;
+    box-shadow: 0 2rem 7rem rgba(0, 0, 0, 0.5);
+    background-color: #777;
+    height: 53rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 234;
+    margin-top: 12rem; }
+  .team__cards-container {
+    display: flex;
+    justify-content: center; }
+  .team__img {
+    border-radius: 50%;
+    width: 70%;
+    position: absolute;
+    top: 12%;
+    left: 12%; }
+  .team__heading {
+    margin-bottom: 10rem;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 30rem; }
+  .team__top {
+    height: 30%;
+    background-color: #240090; }
+  .team__details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    background-color: #777;
+    align-items: center;
+    justify-content: center; }
+  .team__img-container {
+    height: 15rem; }
+    .team__img-container--1 {
+      background-image: linear-gradient(to right, #673ab7, #03a9f4); }
+    .team__img-container--2 {
+      background-image: linear-gradient(to right, #93ac94, #009688); }
+    .team__img-container--3 {
+      background-image: linear-gradient(to right, #673ab7, #03a9f4); }
+  .team__name {
+    font-size: 2rem;
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 1.2rem;
+    text-transform: uppercase; }
+    .team__name--1 {
+      color: #25bcf3; }
+    .team__name--2 {
+      color: #25bcf3; }
+    .team__name--3 {
+      color: #25bcf3; }
+  .team__postion {
+    font-size: 1.8rem;
+    color: #faf9f9;
+    font-weight: 500;
+    font-family: "nobile";
+    display: inline-block; }
+  .team__profile {
+    font-size: 1.4rem;
+    color: #faf9f9;
+    display: inline-block;
+    padding: 1.1rem; }
+
+.clients {
+  position: relative;
+  padding-top: 1.8rem; }
+  .clients__heading {
+    margin-bottom: 10rem;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 30rem; }
+  .clients__description {
+    display: inline-block;
+    font-size: 1.7rem; }
+  .clients__description-container {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 165%);
+    width: 82%; }
+  .clients__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 17rem;
+    grid-row-gap: 3rem;
+    padding: 4rem; }
+  .clients__logo {
+    height: 5rem;
+    color: #333; }
+
+.footer {
+  background-color: #333;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 3px #faf9f9; }
+  .footer__nav__list {
+    margin-top: -3rem;
+    display: flex;
+    list-style: none;
+    font-size: 1.9rem;
+    justify-content: space-between;
+    padding: 3rem;
+    flex-direction: column; }
+  .footer__nav__link {
+    text-decoration: none;
+    color: #faf9f9;
+    transition: all 0.4s;
+    cursor: pointer; }
+    .footer__nav__link:hover {
+      color: #25bcf3;
+      transform: translateY(-10px); }
+  .footer__logo {
+    height: 8rem;
+    width: 15rem; }
+  .footer__logo-container {
+    margin-top: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .footer__span {
+    margin-top: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    color: #faf9f9;
+    font-weight: 500;
+    font-size: 2rem; }
+    .footer__span:hover {
+      color: #25bcf3;
+      transform: translateY(-10px); }
+  .footer__about {
+    margin-top: 2rem;
+    flex-basis: 30%; }
+    .footer__about--text {
+      font-size: 2rem;
+      padding: 2rem;
+      color: #faf9f9;
+      font-weight: 500;
+      font-family: "nobile"; }
+      .footer__about--text:hover {
+        color: #25bcf3;
+        transform: translateY(-10px); }
+    .footer__about--description {
+      padding: 2rem;
+      color: #999;
+      font-size: 1.6rem; }
+    .footer__about__social-link {
+      display: flex;
+      margin-left: 2rem; }
+    .footer__about--icon {
+      height: 2.8rem;
+      width: 2.8rem;
+      fill: #faf9f9;
+      cursor: pointer; }
+      .footer__about--icon:not(:last-child) {
+        margin-right: 1rem; }
+      .footer__about--icon:hover {
+        fill: #25bcf3; }
+  .footer__contact {
+    padding: 2rem;
+    flex-basis: 45%; }
+    .footer__contact--icon {
+      height: 2.8rem;
+      width: 2.8rem;
+      fill: #25bcf3;
+      margin-top: 1rem; }
+    .footer__contact__text {
+      font-size: 2rem;
+      padding: 2rem;
+      color: #faf9f9;
+      font-family: "nobile"; }
+      .footer__contact__text:hover {
+        color: #25bcf3;
+        transform: translateY(-10px); }
+    .footer__contact__list {
+      list-style: none;
+      margin-top: 2rem; }
+    .footer__contact__link {
+      text-decoration: none;
+      color: #faf9f9;
+      transition: all 0.4s;
+      display: inline-block;
+      font-size: 2rem;
+      margin-top: -1rem;
+      margin-left: 4rem;
+      cursor: pointer; }
+      .footer__contact__link:hover {
+        color: #25bcf3;
+        transform: translateY(-10px); }
+  .footer__copyright {
+    display: inline-block;
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.4rem;
+    color: #999;
+    left: 40%; }

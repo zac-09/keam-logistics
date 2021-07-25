@@ -61,7 +61,7 @@
     }
   }
   &__heading {
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
     position: absolute;
     top: 1%;
     left: 50%;
@@ -74,10 +74,11 @@
     flex: wrap;
     width: 80%;
     position: relative;
+    height: 40rem;
   }
   &__tabs-container {
     position: absolute;
-    top: -15%;
+    top: -10%;
     left: 15%;
   }
 }

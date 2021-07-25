@@ -1,0 +1,101 @@
+.team {
+  //   height:100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    $color-primary,
+    $color-primary-light
+  );
+  padding-top: 1.8rem;
+  position: relative;
+  &__card {
+    border-radius: 30px;
+    box-shadow: 0 2rem 7rem rgba(0, 0, 0, 0.5);
+    // width: 30rem;
+    // padding-top: 4rem;
+    background-color: $color-grey-dark-2;
+    height: 53rem;   
+    overflow: hidden;
+    position: relative;
+    z-index: 234;
+    margin-top: 12rem;
+  }
+  &__cards-container {
+    display: flex;
+    justify-content: center;
+  }
+  &__img {
+    border-radius: 50%;
+    width: 70%;
+    position: absolute;
+    top: 12%;
+    left: 12%;
+  }
+  &__heading {
+    margin-bottom: 10rem;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 30rem;
+  }
+  &__top {
+    height: 30%;
+    background-color: $color-secondary;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    background-color: $color-grey-dark-2;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img-container {
+    height: 15rem;
+
+    &--1 {
+      background-image: linear-gradient(to right, #673ab7, #03a9f4);
+    }
+    &--2 {
+      background-image: linear-gradient(to right, #93ac94, #009688);
+    }
+    &--3 {
+      background-image: linear-gradient(to right, #673ab7, #03a9f4);
+    }
+  }
+  &__name {
+    font-size: 2rem;
+    margin-top: 2rem;
+
+    display: inline-block;
+    padding: 1.2rem;
+    text-transform: uppercase;
+
+    &--1 {
+      color: $color-primary;
+    }
+
+    &--2 {
+        color: $color-primary;
+
+    }
+
+    &--3 {
+      color: $color-primary;
+    }
+  }
+  &__postion {
+    font-size: 1.8rem;
+    color: $color-grey-light-1;   
+    font-weight: 500;
+    font-family: $font-title;
+
+    display: inline-block;
+  }
+  &__profile {
+    font-size: 1.4rem;
+    color: $color-grey-light-1;
+    display: inline-block;
+    padding: 1.1rem;
+  }
+}
