@@ -1,6 +1,6 @@
 .footer {
   background-color: $color-grey-dark-1;
-  height: 50vh;
+  height: 60vh;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -72,8 +72,12 @@
       font-family: $font-title;
       @include respond(tab-port) {
         padding: 1rem;
-        font-size:  1.8rem;
-        }
+        font-size: 1.8rem;
+      }
+      @include respond(phone) {
+        font-size: 1.4rem;
+        padding: 0.3rem;
+      }
       &:hover {
         color: $color-primary;
         transform: translateY(-10px);
@@ -83,8 +87,11 @@
       padding: 2rem;
       color: $color-grey-dark-3;
       @include respond(tab-port) {
-      padding: 1rem;
-      font-size:  1.4rem;
+        padding: 1rem;
+        font-size: 1.4rem;
+      }
+      @include respond(phone) {
+        font-size: 1.2rem;
       }
 
       font-size: 1.6rem;
@@ -112,6 +119,13 @@
     padding: 2rem;
     // margin-top: 2rem;
     flex-basis: 45%;
+    @include respond(phone) {
+      padding: 1rem;
+      flex-basis: 50%;
+      margin-top: 2rem;
+
+      
+    } 
     &--icon {
       height: 2.8rem;
       width: 2.8rem;
@@ -121,6 +135,11 @@
         height: 2rem;
         width: 2rem;
       }
+      @include respond(phone) {
+      height: 1.6rem;
+      width: 1.6rem;
+        
+      } 
     }
     &__text {
       font-size: 2rem;
@@ -132,6 +151,11 @@
         color: $color-primary;
         transform: translateY(-10px);
       }
+      @include respond(phone) {
+       font-size: 1.6rem;
+       padding: 1rem;
+        
+      } 
     }
     &__list {
       list-style: none;
@@ -155,6 +179,13 @@
         font-size: 1.4rem;
         margin-left: 3.5rem;
       }
+      @include respond(phone) {
+    font-size: 1rem;
+    margin-left: 2rem;
+    transform: translateY(-15px);
+ 
+        
+      } 
       &:hover {
         color: $color-primary;
         transform: translateY(-10px);

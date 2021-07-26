@@ -16,16 +16,22 @@
   }
   &__description {
     // display: inline-block;
+    font-size: 2rem;
     @include respond(tab-port) {
       font-size: 1.8rem;
     }
-    font-size: 2rem;
+    @include respond(phone) {
+      font-size: 1.4rem;
+    }
   }
   &__title {
     display: inline-block;
     color: $color-grey-dark-1;
     @include respond(tab-port) {
       font-size: 2.8rem;
+    }
+    @include respond(phone) {
+      font-size: 2rem;
     }
     // margin: 2rem;
 
@@ -68,6 +74,9 @@
       margin-left: 8rem;
       margin-right: 10rem;
     }
+    @include respond(phone) {
+      display: none;
+    }
     // height: 7.2rem;
     // flex-basis: 30%;
   }
@@ -80,6 +89,10 @@
     @include respond(tab-port) {
       margin-left: 10rem;
       position: relative;
+    }
+    @include respond(phone) {
+      margin-left: 15rem;
+      width: 75%;
     }
   }
   &__heading {
@@ -106,7 +119,11 @@
     position: relative;
     height: 40rem;
     @include respond(tab-port) {
-      width: 75%;
+      width: 95%;
+    }
+    @include respond(phone) {
+      width: 100%;
+      margin-top: .2rem;
     }
   }
   &__tabs-container {

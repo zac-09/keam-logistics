@@ -134,6 +134,9 @@ body {
     display: flex;
     list-style: none;
     margin-top: 3rem; }
+    @media (max-width: 37.5em) {
+      .nav__list {
+        display: none; } }
   .nav__item {
     text-decoration: none;
     list-style: none;
@@ -237,13 +240,17 @@ body {
         top: 0;
         left: 0;
         transform: translateX(28rem); } }
+    @media (max-width: 37.5em) {
+      .services__heading {
+        transform: translateX(12rem); } }
   .services__container {
     display: flex;
     margin: 0 5rem; }
     @media (max-width: 56.25em) {
       .services__container {
         flex-direction: column;
-        position: relative; } }
+        position: relative;
+        width: 100%; } }
   .services__icon {
     height: 4rem;
     width: 4rem;
@@ -271,9 +278,17 @@ body {
         position: absolute;
         top: 0;
         left: 0; } }
+    @media (max-width: 37.5em) {
+      .services__img-container {
+        width: 100%; } }
   .services__all {
     margin: 12rem auto;
     width: 88%; }
+    @media (max-width: 56.25em) {
+      .services__all {
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap; } }
   .services__content {
     display: flex;
     flex-direction: column;
@@ -285,6 +300,10 @@ body {
     @media (max-width: 56.25em) {
       .services__content {
         margin-top: 30rem; } }
+    @media (max-width: 37.5em) {
+      .services__content {
+        margin-top: 22rem;
+        width: 100%; } }
   .services__name {
     padding: 1.3rem;
     font-size: 2.2rem;
@@ -367,6 +386,9 @@ body {
         top: 0;
         left: 0;
         transform: translateX(28rem); } }
+    @media (max-width: 37.5em) {
+      .about__heading {
+        transform: translateX(12rem); } }
   .about__text {
     display: inline-block;
     margin-top: 10rem;
@@ -397,6 +419,9 @@ body {
     @media (max-width: 56.25em) {
       .objectives__description {
         font-size: 1.8rem; } }
+    @media (max-width: 37.5em) {
+      .objectives__description {
+        font-size: 1.4rem; } }
   .objectives__title {
     display: inline-block;
     color: #333;
@@ -404,6 +429,9 @@ body {
     @media (max-width: 56.25em) {
       .objectives__title {
         font-size: 2.8rem; } }
+    @media (max-width: 37.5em) {
+      .objectives__title {
+        font-size: 2rem; } }
   .objectives__icon {
     height: 5rem;
     width: 5rem;
@@ -431,6 +459,9 @@ body {
         margin-top: 2.5rem;
         margin-left: 8rem;
         margin-right: 10rem; } }
+    @media (max-width: 37.5em) {
+      .objectives__icon-container {
+        display: none; } }
   .objectives__content {
     margin: 5rem;
     display: none; }
@@ -440,6 +471,10 @@ body {
       .objectives__content {
         margin-left: 10rem;
         position: relative; } }
+    @media (max-width: 37.5em) {
+      .objectives__content {
+        margin-left: 15rem;
+        width: 75%; } }
   .objectives__heading {
     margin-bottom: 12rem;
     position: absolute;
@@ -463,7 +498,11 @@ body {
     height: 40rem; }
     @media (max-width: 56.25em) {
       .objectives__tabs {
-        width: 75%; } }
+        width: 95%; } }
+    @media (max-width: 37.5em) {
+      .objectives__tabs {
+        width: 100%;
+        margin-top: .2rem; } }
   .objectives__tabs-container {
     position: absolute;
     top: -10%;
@@ -520,6 +559,9 @@ body {
         top: 0;
         left: 0;
         transform: translateX(28rem); } }
+    @media (max-width: 37.5em) {
+      .team__heading {
+        transform: translateX(12rem); } }
   .team__top {
     height: 30%;
     background-color: #240090; }
@@ -583,6 +625,9 @@ body {
         top: 0;
         left: 0;
         transform: translateX(28rem); } }
+    @media (max-width: 37.5em) {
+      .clients__heading {
+        transform: translateX(12rem); } }
   .clients__description {
     display: inline-block;
     font-size: 1.7rem; }
@@ -590,6 +635,10 @@ body {
     margin-top: 8rem;
     margin-left: 2rem;
     width: 98%; }
+    @media (max-width: 37.5em) {
+      .clients__description-container {
+        width: 100%;
+        margin-left: 1rem; } }
   .clients__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -606,7 +655,7 @@ body {
 
 .footer {
   background-color: #333;
-  height: 50vh;
+  height: 60vh;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -665,6 +714,10 @@ body {
         .footer__about--text {
           padding: 1rem;
           font-size: 1.8rem; } }
+      @media (max-width: 37.5em) {
+        .footer__about--text {
+          font-size: 1.4rem;
+          padding: 0.3rem; } }
       .footer__about--text:hover {
         color: #25bcf3;
         transform: translateY(-10px); }
@@ -676,6 +729,9 @@ body {
         .footer__about--description {
           padding: 1rem;
           font-size: 1.4rem; } }
+      @media (max-width: 37.5em) {
+        .footer__about--description {
+          font-size: 1.2rem; } }
     .footer__about__social-link {
       display: flex;
       margin-left: 2rem; }
@@ -691,6 +747,11 @@ body {
   .footer__contact {
     padding: 2rem;
     flex-basis: 45%; }
+    @media (max-width: 37.5em) {
+      .footer__contact {
+        padding: 1rem;
+        flex-basis: 50%;
+        margin-top: 2rem; } }
     .footer__contact--icon {
       height: 2.8rem;
       width: 2.8rem;
@@ -700,6 +761,10 @@ body {
         .footer__contact--icon {
           height: 2rem;
           width: 2rem; } }
+      @media (max-width: 37.5em) {
+        .footer__contact--icon {
+          height: 1.6rem;
+          width: 1.6rem; } }
     .footer__contact__text {
       font-size: 2rem;
       padding: 2rem;
@@ -708,6 +773,10 @@ body {
       .footer__contact__text:hover {
         color: #25bcf3;
         transform: translateY(-10px); }
+      @media (max-width: 37.5em) {
+        .footer__contact__text {
+          font-size: 1.6rem;
+          padding: 1rem; } }
     .footer__contact__list {
       list-style: none;
       margin-top: 2rem;
@@ -726,6 +795,11 @@ body {
         .footer__contact__link {
           font-size: 1.4rem;
           margin-left: 3.5rem; } }
+      @media (max-width: 37.5em) {
+        .footer__contact__link {
+          font-size: 1rem;
+          margin-left: 2rem;
+          transform: translateY(-15px); } }
       .footer__contact__link:hover {
         color: #25bcf3;
         transform: translateY(-10px); }

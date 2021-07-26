@@ -52,6 +52,10 @@
       left: 0;
       transform: translateX(28rem);
     }
+    @include respond(phone) {
+      transform: translateX(12rem);
+      
+    } 
   }
   &__top {
     height: 30%;
