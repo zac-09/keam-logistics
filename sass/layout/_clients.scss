@@ -3,7 +3,7 @@
   padding-top: 1.8rem;
 
   &__heading {
-    margin-bottom: 10rem;           
+    margin-bottom: 10rem;
     position: absolute;
     top: 1%;
     left: 50%;
@@ -13,22 +13,24 @@
   &__description {
     display: inline-block;
     font-size: 1.7rem;
-    // color: $color-grey-light-1;    
+    // color: $color-grey-light-1;
   }
   &__description-container {
-    position: absolute;
-    top: 1%;
-    left: 50%;
-    transform: translate(-50%, 165%);
+    // position: absolute;
+    // top: 1%;
+    // left: 50%;
+    // transform: translate(-50%, 450%);
+    margin-top: 8rem;
+    margin-left: 2rem;
 
-    width: 82%;
+    width: 98%;
   }
   &__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 17rem;
+    margin-top: 4rem;
     grid-row-gap: 3rem;
-    padding: 4rem;                   
+    padding: 4rem;
   }
   &__logo {
     height: 5rem;

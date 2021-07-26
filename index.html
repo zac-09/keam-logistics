@@ -27,20 +27,24 @@
     <title>Keam Logistics</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="nav">
-        <div class="logo__container"></div>
+        <div class="nav__logo-container">
+            <img src="img/logo25.png" alt="logo" class="nav__logo">
+        </div>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link nav__link--active">Home</a>
+            <a href="#header" class="nav__link nav__link--active">Home</a>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Our services</a>
+            <a href="#about" class="nav__link">About us</a>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Contact us</a>
+            <a href="#services" class="nav__link">Our services</a>
+          </li>
+          <li class="nav__item"><a href="#team" class="nav__link">Team</a></li>
+          <li class="nav__item">
+            <a href="#clients" class="nav__link">clients</a>
           </li>
         </ul>
       </nav>
@@ -53,12 +57,12 @@
           We Grow through creating and delivering real value to our clients
         </div>
         <div class="header__btn-container">
-          <a href="#" class="btn btn--blue">More About Us </a>
-          <a href="#" class="btn btn--white">Our services </a>
+          <a href="#about" class="btn btn--blue">More About Us </a>
+          <a href="#services" class="btn btn--white">Our services </a>
         </div>
       </div>
     </header>
-    <section class="services section">
+    <section class="services section" id="services">
       <div class="services__heading">
         <h2 class="heading-2">What We Do</h2>
       </div>
@@ -107,7 +111,7 @@
           </div>
           <div class="services__img-container">
             <img
-              src="img/marcin-jozwiak-kGoPcmpPT7c-unsplash.jpg"
+              src="img/new_continer.jpg"
               alt="services image"
               class="services__img"
             />
@@ -116,7 +120,7 @@
         <div class="services__container">
           <div class="services__img-container">
             <img
-              src="img/barrett-ward-5WQJ_ejZ7y8-unsplash.jpg"
+              src="img/new_tent.jpg"
               alt="services image"
               class="services__img"
             />
@@ -162,7 +166,7 @@
           </div>
           <div class="services__img-container">
             <img
-              src="img/shaah-shahidh--subrrYxv8A-unsplash.jpg"
+              src="img/new_track.jpg"
               alt="services image"
               class="services__img"
             />
@@ -170,7 +174,7 @@
         </div>
       </div>
     </section>
-    <section class="about section">
+    <section class="about section" id="about">
       <div class="about__heading">
         <h2 class="heading-2">About us</h2>
       </div>
@@ -187,7 +191,7 @@
         clients through quality processes.
       </p>
     </section>
-    <section class="objectives section">
+    <section class="objectives section" id="objectives">
       <div class="objectives__heading">
         <h2 class="heading-2">Why We Are The Best</h2>
       </div>
@@ -251,14 +255,14 @@
         </div>
       </div>
     </section>
-    <section class="team section">
+    <section class="team section" id="team">
       <div class="team__heading">
         <h2 class="heading-2 heading-2--team">Meet the team</h2>
       </div>
       <div class="team__cards-container">
         <div class="team__card card">
           <div class="team__img-container team__img-container--1">
-            <img src="img/user-1.jpg" alt="team image" class="team__img" />
+            <img src="img/user-keam.jpg" alt="team image" class="team__img" />
           </div>
           <div class="team__details">
             <span class="team__name team__name--1">Muhairwe Emmanuel K</span>
@@ -272,7 +276,7 @@
         </div>
         <div class="team__card card">
           <div class="team__img-container team__img-container--2">
-            <img src="img/user-2.jpg" alt="team image" class="team__img" />
+            <img src="img/aggery.jpg" alt="team image" class="team__img" />
           </div>
           <div class="team__details">
             <span class="team__name team__name--2">AggreyAmanyabyoona</span>
@@ -287,7 +291,7 @@
         </div>
       </div>
     </section>
-    <section class="section clients">
+    <section class="section clients" id="clients">
       <div class="clients__heading">
         <h2 class="heading-2">Our Clients</h2>
       </div>
@@ -359,19 +363,17 @@
         <span class="footer__span">Useful links</span>
         <ul class="footer__nav__list">
           <li class="footer__nav__list__item">
-            <a href="#" class="footer__nav__link">About</a>
+            <a href="#about" class="footer__nav__link">About</a>
           </li>
           <li class="footer__nav__list__item">
-            <a href="#" class="footer__nav__link">privacy policy</a>
+            <a href="#team" class="footer__nav__link">Team</a>
+          </li>
+
+          <li class="footer__nav__list__item">
+            <a href="#services" class="footer__nav__link">Services</a>
           </li>
           <li class="footer__nav__list__item">
-            <a href="#" class="footer__nav__link">gallery</a>
-          </li>
-          <li class="footer__nav__list__item">
-            <a href="#" class="footer__nav__link">services</a>
-          </li>
-          <li class="footer__nav__list__item">
-            <a href="#" class="footer__nav__link">contact us </a>
+            <a href="#clients" class="footer__nav__link">Clients </a>
           </li>
         </ul>
       </nav>

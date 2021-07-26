@@ -28,7 +28,11 @@
 
   &:active {
     box-shadow: $shadow-dark;
-    transform: translateY(3px) scale(0.9);
+    transform: translateY(-10px) scale(0.9);
+  }
+  &:hover {
+    transform: translateY(-20px);
+    box-shadow: $shadow-light;
   }
 }
 .btn__tab {
@@ -42,7 +46,7 @@
   cursor: pointer;
   transition: all 0.3s;
   &--active {
-    transform: translateY(-4px);      
+    transform: translateY(-4px);
   }
   &--1 {
     background-color: $color-primary;
