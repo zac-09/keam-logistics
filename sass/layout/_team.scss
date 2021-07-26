@@ -7,13 +7,16 @@
   );
   padding-top: 1.8rem;
   position: relative;
+  @include respond(tab-port) {
+    max-width: 900px;
+  }
   &__card {
     border-radius: 30px;
     box-shadow: 0 2rem 7rem rgba(0, 0, 0, 0.5);
     // width: 30rem;
     // padding-top: 4rem;
     background-color: $color-grey-dark-2;
-    height: 53rem;   
+    height: 53rem;
     overflow: hidden;
     position: relative;
     z-index: 234;
@@ -22,6 +25,10 @@
   &__cards-container {
     display: flex;
     justify-content: center;
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__img {
     border-radius: 50%;
@@ -37,6 +44,14 @@
     left: 50%;
     transform: translate(-50%, 0%);
     width: 30rem;
+    @include respond(tab-port) {
+      position: relative;
+      transform: none;
+      width: 40rem;
+      top: 0;
+      left: 0;
+      transform: translateX(28rem);
+    }
   }
   &__top {
     height: 30%;
@@ -57,7 +72,7 @@
       background-image: linear-gradient(to right, #673ab7, #03a9f4);
     }
     &--2 {
-      background-image: linear-gradient(to right, #512DA8, #FF4081);
+      background-image: linear-gradient(to right, #512da8, #ff4081);
     }
     &--3 {
       background-image: linear-gradient(to right, #673ab7, #03a9f4);
@@ -76,8 +91,7 @@
     }
 
     &--2 {
-        color: $color-primary;
-
+      color: $color-primary;
     }
 
     &--3 {
@@ -86,7 +100,7 @@
   }
   &__postion {
     font-size: 1.8rem;
-    color: $color-grey-light-1;   
+    color: $color-grey-light-1;
     font-weight: 500;
     font-family: $font-title;
 

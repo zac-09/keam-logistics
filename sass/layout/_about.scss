@@ -11,6 +11,11 @@
     url(../img/IMG-20210723-WA0008.jpg);
   background-size: cover;
   clip-path: polygon(100% 0, 100% 86%, 0 73%, 0 0);
+  @include respond(tab-port) {
+    height: 100%;
+    clip-path: none;
+    max-width: 900px;
+  }
   // padding: 2rem;
   &__heading {
     margin-bottom: 10rem;
@@ -19,6 +24,14 @@
     left: 90%;
     transform: translate(-50%, 0%);
     width: 100%;
+    @include respond(tab-port) {
+      position: relative;
+      transform: none;
+      width: 40rem;
+      top: 0;
+      left: 0;
+      transform: translateX(28rem);
+    }
   }
   &__text {
     display: inline-block;
@@ -26,5 +39,9 @@
     padding: 2rem;
     font-size: 1.8rem;
     color: $color-grey-light-1;
+    @include respond(tab-port) {
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
   }
 }

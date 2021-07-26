@@ -6,6 +6,13 @@
   justify-content: space-between;
   border-top: solid 3px $color-grey-light-1;
   margin-top: 10rem;
+
+  @include respond(tab-port) {
+    height: 100%;
+    //  padding: 1rem;
+    max-width: 900px;
+  }
+
   &__nav {
     // position: absolute;
 
@@ -63,6 +70,10 @@
       color: $color-grey-light-1;
       font-weight: 500;
       font-family: $font-title;
+      @include respond(tab-port) {
+        padding: 1rem;
+        font-size:  1.8rem;
+        }
       &:hover {
         color: $color-primary;
         transform: translateY(-10px);
@@ -71,6 +82,10 @@
     &--description {
       padding: 2rem;
       color: $color-grey-dark-3;
+      @include respond(tab-port) {
+      padding: 1rem;
+      font-size:  1.4rem;
+      }
 
       font-size: 1.6rem;
     }
@@ -102,6 +117,10 @@
       width: 2.8rem;
       fill: $color-primary;
       margin-top: 1rem;
+      @include respond(tab-port) {
+        height: 2rem;
+        width: 2rem;
+      }
     }
     &__text {
       font-size: 2rem;
@@ -132,6 +151,10 @@
       margin-left: 2rem;
       transform: translateY(-7px);
       cursor: pointer;
+      @include respond(tab-port) {
+        font-size: 1.4rem;
+        margin-left: 3.5rem;
+      }
       &:hover {
         color: $color-primary;
         transform: translateY(-10px);

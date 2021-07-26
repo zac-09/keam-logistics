@@ -1,6 +1,9 @@
 .clients {
   position: relative;
   padding-top: 1.8rem;
+  @include respond(tab-port) {
+    max-width: 900px;
+  }
 
   &__heading {
     margin-bottom: 10rem;
@@ -9,6 +12,14 @@
     left: 50%;
     transform: translate(-50%, 0%);
     width: 30rem;
+    @include respond(tab-port) {
+      position: relative;
+      transform: none;
+      width: 40rem;
+      top: 0;
+      left: 0;
+      transform: translateX(28rem);
+    }
   }
   &__description {
     display: inline-block;
@@ -35,5 +46,9 @@
   &__logo {
     height: 5rem;
     color: $color-grey-dark-1;
+    @include respond(phone) {
+      height: 2rem;
+      max-width: 3rem;
+    }
   }
 }

@@ -1,24 +1,32 @@
 .objectives {
   position: relative;
   height: 80vh;
-//   padding: 2rem;
+  //   padding: 2rem;
   margin-top: -4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include respond(tab-port) {
+    max-width: 900px;
+  }
   &__text {
     margin: 1rem 5rem;
     color: $color-grey-dark-2;
   }
   &__description {
     // display: inline-block;
+    @include respond(tab-port) {
+      font-size: 1.8rem;
+    }
     font-size: 2rem;
   }
   &__title {
     display: inline-block;
     color: $color-grey-dark-1;
-
+    @include respond(tab-port) {
+      font-size: 2.8rem;
+    }
     // margin: 2rem;
 
     font-size: 3.5rem;
@@ -32,6 +40,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @include respond(tab-port) {
+      height: 4.5rem;
+      width: 4.5rem;
+      margin-left: 3rem;
+    }
     &--1 {
       fill: $color-primary;
     }
@@ -50,6 +63,11 @@
     // width: 15rem;
     margin-top: 2.5rem;
     margin: 3rem;
+    @include respond(tab-port) {
+      margin-top: 2.5rem;
+      margin-left: 8rem;
+      margin-right: 10rem;
+    }
     // height: 7.2rem;
     // flex-basis: 30%;
   }
@@ -59,14 +77,26 @@
     &--active {
       display: flex;
     }
+    @include respond(tab-port) {
+      margin-left: 10rem;
+      position: relative;
+    }
   }
   &__heading {
     margin-bottom: 12rem;
     position: absolute;
     top: 1%;
     left: 50%;
-    transform: translate(-50%, 0%);   
-    width: 70rem; 
+    transform: translate(-50%, 0%);
+    width: 70rem;
+    @include respond(tab-port) {
+      position: relative;
+      transform: none;
+      width: 40rem;
+      top: 0;
+      left: 0;
+      transform: translateX(2rem);
+    }
   }
   &__tabs {
     margin-top: 12rem;
@@ -75,10 +105,20 @@
     width: 80%;
     position: relative;
     height: 40rem;
+    @include respond(tab-port) {
+      width: 75%;
+    }
   }
   &__tabs-container {
     position: absolute;
     top: -10%;
     left: 15%;
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 15%;
+      left: 5%;
+    }
   }
 }

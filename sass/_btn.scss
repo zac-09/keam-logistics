@@ -45,7 +45,12 @@
   border-radius: 20rem;
   cursor: pointer;
   transition: all 0.3s;
+  @include respond(tab-port) {
+    width: 10rem;
+    font-size: 1.2rem;
+  }
   &--active {
+
     transform: translateY(-4px);
   }
   &--1 {
